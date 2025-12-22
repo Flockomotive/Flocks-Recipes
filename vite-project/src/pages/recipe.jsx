@@ -10,27 +10,54 @@ export default function Recipe() {
   }
 
   return (
-    <main>
+    <div className="recipe">
       <h1>{recipe.title}</h1>
-      <p>
-        Prep: {recipe.prepTime} | Cook: {recipe.cookTime}
-      </p>
 
-      <h2>Ingredients</h2>
-      <ul>
-        {recipe.ingredients.map((item, i) => (
-          <li key={i}>{item}</li>
-        ))}
-      </ul>
+      {/* Optional Tags */}
+      {recipe.tags && recipe.tags.length > 0 && (
+        <p>
+          <strong>Tags:</strong> {recipe.tags.join(', ')}
+        </p>
+      )}
 
-      <h2>Steps</h2>
-      <ol>
-        {recipe.steps.map((step, i) => (
-          <li key={i}>{step}</li>
-        ))}
-      </ol>
+      {/* Kategorie */}
+      {recipe.category && recipe.category.length > 0 && (
+        <p>
+          <strong>Kategorie:</strong> {recipe.category}
+        </p>
+      )}
 
-      <Link to="/">← Back</Link>
-    </main>
-  )
+      {/* Ingredients */}
+      {recipe.ingredients && recipe.ingredients.length > 0 && (
+        <div>
+          <h2>Zutaten</h2>
+          <ul>
+            {recipe.ingredients.map((ingredient, index) => (
+              <li key={index}>{ingredient}</li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {/* Steps */}
+      {recipe.steps && recipe.steps.length > 0 && (
+        <div>
+          <h2>Zubereitung</h2>
+          <ol>
+            {recipe.steps.map((step, index) => (
+              <li key={index}>{step}</li>
+            ))}
+          </ol>
+        </div>
+      )}
+
+      {/* Optional Cooking Instructions */}
+      {recipe.cooking_instructions && (
+        <div>
+          <h2>Zubereitung</h2>
+          <p>{recipe.cooking_instructions}</p>
+        </div>
+      )}
+    </div>
+  );
 }

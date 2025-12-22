@@ -1,26 +1,13 @@
 [
   {
-    "id": "pancakes",
-    "title": "Pancakes",
-    "prepTime": "10 min",
-    "cookTime": "15 min",
-    "ingredients": [
-      "1 cup flour",
-      "1 egg",
-      "1 cup milk"
-    ],
-    "steps": [
-      "Mix ingredients",
-      "Heat pan",
-      "Cook until golden"
-    ]
-  },
-  {
     "id": "Gulasch",
     "title": "Gulasch",
+    "tags": ["chocolate", "cake", "baking"],
+    "category": "Hauptspeiße",
     "prepTime": "1 Stunde",
     "cookTime": "3 Stunden",
-    "ingredients": [
+    "ingredients": 
+      [
       "800g Rindergulasch",
       "600g Schalloten",
       "500ml Rinderbrühe",
@@ -30,18 +17,22 @@
       "1 Loorberblatt",
       "2 EL Tomatenmark",
       "Salz, Pfeffer, Paprika, Majoran, Cayenpfeffer"
-
-    ],
-    "steps": [
+      ],
+    "steps": 
+      [   
       "Zwiebeln in Butter anschwitzen. Zwiebeln rausnehmen. Fleisch richtig scharf anbraten. Zwiebeln dazugeben. Tomatenmark kurz mit anrösten. Mit Wein ablöschen und auf 1/3 reduzieren. Rest dazugeben und 2-2,5h gut kochen lassen."
-    ]
-  },
+      ],
+    "cooking_instructions": ""
+  }, 
   {
-    "id": "Gulasch",
-    "title": "Gulasch",
-    "prepTime": "1 Stunde",
-    "cookTime": "3 Stunden",
-    "ingredients": [
+    "id": "Lachsnudeln",
+    "title": "Lachsnudeln",
+    "tags": ["chocolate", "cake", "baking"],
+    "category": "Hauptspeiße",
+    "prepTime": "0,5 Stunde",
+    "cookTime": "0,5 Stunden",
+    "ingredients": 
+      [
       "250g Lachs (tiefgefroren)",
       "350g Tagliatelle",
       "1/2 Becher Sahne",
@@ -50,11 +41,11 @@
       "1 Zwiebel",
       "1 Knoblauchzehe",
       "Zitrone"
-    ],
-    "steps": [
+      ],
+    "steps": 
+      [   
       "Zwiebeln in Butter anschwitzen. Zwiebeln rausnehmen. Fleisch richtig scharf anbraten. Zwiebeln dazugeben. Tomatenmark kurz mit anrösten. Mit Wein ablöschen und auf 1/3 reduzieren. Rest dazugeben und 2-2,5h gut kochen lassen."
-    ]
-  }
-
-
+      ],
+    "cooking_instructions": ""
+  } 
 ]
