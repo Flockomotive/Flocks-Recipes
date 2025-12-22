@@ -1,0 +1,18 @@
+[
+  {
+    "id": "pancakes",
+    "title": "Pancakes",
+    "prepTime": "10 min",
+    "cookTime": "15 min",
+    "ingredients": [
+      "1 cup flour",
+      "1 egg",
+      "1 cup milk"
+    ],
+    "steps": [
+      "Mix ingredients",
+      "Heat pan",
+      "Cook until golden"
+    ]
+  }
+]
