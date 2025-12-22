@@ -14,5 +14,47 @@
       "Heat pan",
       "Cook until golden"
     ]
+  },
+  {
+    "id": "Gulasch",
+    "title": "Gulasch",
+    "prepTime": "1 Stunde",
+    "cookTime": "3 Stunden",
+    "ingredients": [
+      "800g Rindergulasch",
+      "600g Schalloten",
+      "500ml Rinderbrühe",
+      "350ml Rotwein",
+      "2 Knoblauchzehen",
+      "Zitronenzeste von 1 Zitrone",
+      "1 Loorberblatt",
+      "2 EL Tomatenmark",
+      "Salz, Pfeffer, Paprika, Majoran, Cayenpfeffer"
+
+    ],
+    "steps": [
+      "Zwiebeln in Butter anschwitzen. Zwiebeln rausnehmen. Fleisch richtig scharf anbraten. Zwiebeln dazugeben. Tomatenmark kurz mit anrösten. Mit Wein ablöschen und auf 1/3 reduzieren. Rest dazugeben und 2-2,5h gut kochen lassen."
+    ]
+  },
+  {
+    "id": "Gulasch",
+    "title": "Gulasch",
+    "prepTime": "1 Stunde",
+    "cookTime": "3 Stunden",
+    "ingredients": [
+      "250g Lachs (tiefgefroren)",
+      "350g Tagliatelle",
+      "1/2 Becher Sahne",
+      "1TL Tomatenmark",
+      "1 EL Dill",
+      "1 Zwiebel",
+      "1 Knoblauchzehe",
+      "Zitrone"
+    ],
+    "steps": [
+      "Zwiebeln in Butter anschwitzen. Zwiebeln rausnehmen. Fleisch richtig scharf anbraten. Zwiebeln dazugeben. Tomatenmark kurz mit anrösten. Mit Wein ablöschen und auf 1/3 reduzieren. Rest dazugeben und 2-2,5h gut kochen lassen."
+    ]
   }
+
+
 ]
