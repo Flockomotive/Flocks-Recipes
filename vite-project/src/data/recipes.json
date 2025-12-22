@@ -1,51 +1,138 @@
 [
   {
-    "id": "Gulasch",
-    "title": "Gulasch",
-    "tags": ["chocolate", "cake", "baking"],
-    "category": "Hauptspeiße",
-    "prepTime": "1 Stunde",
-    "cookTime": "3 Stunden",
-    "ingredients": 
-      [
-      "800g Rindergulasch",
-      "600g Schalloten",
-      "500ml Rinderbrühe",
-      "350ml Rotwein",
-      "2 Knoblauchzehen",
-      "Zitronenzeste von 1 Zitrone",
-      "1 Loorberblatt",
-      "2 EL Tomatenmark",
-      "Salz, Pfeffer, Paprika, Majoran, Cayenpfeffer"
-      ],
-    "steps": 
-      [   
-      "Zwiebeln in Butter anschwitzen. Zwiebeln rausnehmen. Fleisch richtig scharf anbraten. Zwiebeln dazugeben. Tomatenmark kurz mit anrösten. Mit Wein ablöschen und auf 1/3 reduzieren. Rest dazugeben und 2-2,5h gut kochen lassen."
-      ],
-    "cooking_instructions": ""
+  "id": "Gulasch",
+  "title": "Gulasch",
+  "tags-type": ["Fleisch & Geflügel"],
+  "tags-style": ["Sonntagsrezepte"],
+  "tags-geo": ["Klassisch Deutsch"],
+  "category": "Hauptgericht",
+  "prepTime": "1 Stunde",
+  "cookTime": "3 Stunden",
+  "image": "/images/Gulasch.jpeg",
+  "ingredients": 
+    [
+    "800g Rindergulasch",
+    "600g Schalloten",
+    "500ml Rinderbrühe",
+    "350ml Rotwein",
+    "2 Knoblauchzehen",
+    "Zitronenzeste von 1 Zitrone",
+    "1 Loorberblatt",
+    "2 EL Tomatenmark",
+    "Salz, Pfeffer, Paprika, Majoran, Cayenpfeffer"
+    ],
+  "steps": 
+    [   
+    "Zwiebeln in Butter anschwitzen. Zwiebeln rausnehmen. Fleisch richtig scharf anbraten. Zwiebeln dazugeben. Tomatenmark kurz mit anrösten. Mit Wein ablöschen und auf 1/3 reduzieren. Rest dazugeben und 2-2,5h gut kochen lassen."
+    ],
+  "cooking_instructions": ""
   }, 
   {
-    "id": "Lachsnudeln",
-    "title": "Lachsnudeln",
-    "tags": ["chocolate", "cake", "baking"],
-    "category": "Hauptspeiße",
-    "prepTime": "0,5 Stunde",
-    "cookTime": "0,5 Stunden",
-    "ingredients": 
-      [
-      "250g Lachs (tiefgefroren)",
-      "350g Tagliatelle",
-      "1/2 Becher Sahne",
-      "1TL Tomatenmark",
-      "1 EL Dill",
-      "1 Zwiebel",
-      "1 Knoblauchzehe",
-      "Zitrone"
-      ],
-    "steps": 
-      [   
-      "Zwiebeln in Butter anschwitzen. Zwiebeln rausnehmen. Fleisch richtig scharf anbraten. Zwiebeln dazugeben. Tomatenmark kurz mit anrösten. Mit Wein ablöschen und auf 1/3 reduzieren. Rest dazugeben und 2-2,5h gut kochen lassen."
-      ],
-    "cooking_instructions": ""
-  } 
+  "id": "Lachsnudeln",
+  "title": "Lachsnudeln",
+  "tags-type": ["Fisch","Pasta"],
+  "tags-style": ["Schnelle Rezepte"],
+  "tags-geo": ["Klassisch Deutsch","Italienisch"],
+  "category": "Hauptgericht",
+  "prepTime": "0,5 Stunde",
+  "cookTime": "0,5 Stunden",
+  "image": "",
+  "ingredients": 
+    [
+    "250g Lachs (tiefgefroren)",
+    "350g Tagliatelle",
+    "1/2 Becher Sahne",
+    "1TL Tomatenmark",
+    "1 EL Dill",
+    "1 Zwiebel",
+    "1 Knoblauchzehe",
+    "Zitrone"
+    ],
+  "steps": 
+    [   
+    "Zwiebeln in Butter anschwitzen. Zwiebeln rausnehmen. Fleisch richtig scharf anbraten. Zwiebeln dazugeben. Tomatenmark kurz mit anrösten. Mit Wein ablöschen und auf 1/3 reduzieren. Rest dazugeben und 2-2,5h gut kochen lassen."
+    ],
+  "cooking_instructions": ""
+  },
+  {
+  "id": "Pilzrisotto",
+  "title": "Pilzrisotto",
+  "tags-type": ["Vegetarisch","Beilagen"],
+  "tags-style": [],
+  "tags-geo": ["Italienisch"],
+  "category": "Hauptgericht",
+  "prepTime": "0,5 Stunde",
+  "cookTime": "0,5 Stunden",
+  "image": "",
+  "ingredients": 
+    [
+    "250g Risottoreis",
+    "400ml Weißwein",
+    "400ml Gemüsebrühe",
+    "200ml Wasser",
+    "30g Parmesan",
+    "40g Butter"
+    ],
+  "steps": 
+    [   
+    "Nach 20min Pilze dazu",
+    "Nach 25min Käse+Butter",
+    "30min fertig   "   
+    ],
+  "cooking_instructions": ""
+  },
+  {
+  "id": "Waffeln",
+  "title": "klassische Waffeln",
+  "tags-type": ["Vegetarisch","Backen"],
+  "tags-style": ["Frühstück"],
+  "tags-geo": ["Klassisch Deutsch"],
+  "category": "Dessert",
+  "prepTime": "0,5 Stunde",
+  "cookTime": "0,5 Stunden",
+  "image": "",
+  "ingredients": 
+    [
+    "100g Butter",
+    "75g Zucker",
+    "2 Eier",
+    "125g Mehl",
+    "150 Milch",
+    "1TL Backpulver",
+    "1 TL Zimt",
+    "1 TL Vanillezucker",
+    "3 Äpfel"
+    ],
+  "steps": 
+    [   
+    ],
+  "cooking_instructions": ""
+  },
+  {
+  "id": "Nudelsalat",
+  "title": "Italienischer-Nudelsalat",
+  "tags-type": ["Pasta","Kalt","Vegetarisch","Beilagen"],
+  "tags-style": ["Sommer","Party"],
+  "tags-geo": ["Italienisch"],
+  "category": "Hauptgericht",
+  "prepTime": "1 Stunde",
+  "cookTime": "3 Stunden",
+  "image": "/images/Gulasch.jpeg",
+  "ingredients": 
+    [
+    "200g flour",
+    "100g sugar",
+    "2 eggs",
+    "100g dark chocolate"
+    ],
+  "steps": 
+    [   
+      "Mix ingredients",
+      "Heat pan",
+      "Cook until golden"
+    ],
+  "cooking_instructions": "Bake at 180°C for 25 minutes"
+}
 ]
+
+

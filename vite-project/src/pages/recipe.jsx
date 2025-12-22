@@ -13,6 +13,15 @@ export default function Recipe() {
     <div className="recipe">
       <h1>{recipe.title}</h1>
 
+      {/* Recipe Image */}
+      {recipe.image && (
+        <img 
+          src={recipe.image} 
+          alt={recipe.title} 
+          style={{ width: '300px', borderRadius: '8px', margin: '10px 0' }} 
+        />
+      )}
+
       {/* Optional Tags */}
       {recipe.tags && recipe.tags.length > 0 && (
         <p>

@@ -1,10 +1,13 @@
 {
   "id": "unique name",
   "name": "friendly name",
-  "tags": ["chocolate", "cake", "baking"],
+  "tags-type": ["chocolate", "cake", "baking"],
+  "tags-style": ["chocolate", "cake", "baking"],
+  "tags-geo": ["chocolate", "cake", "baking"],
   "category": "Hauptspeiße",
   "prepTime": "1 Stunde",
   "cookTime": "3 Stunden",
+  "image": "/images/Gulasch.jpeg",
   "ingredients": 
     [
     "200g flour",
