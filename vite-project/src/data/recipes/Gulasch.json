@@ -1,0 +1,30 @@
+[
+  {
+  "id": "Gulasch",
+  "title": "Gulasch",
+  "tags-type": ["Fleisch & Geflügel"],
+  "tags-style": ["Sonntagsrezepte"],
+  "tags-geo": ["Klassisch Deutsch"],
+  "category": "Hauptgericht",
+  "prepTime": "1 Stunde",
+  "cookTime": "3 Stunden",
+  "image": "/images/Gulasch.jpeg",
+  "ingredients": 
+    [
+    "800g Rindergulasch",
+    "600g Schalloten",
+    "500ml Rinderbrühe",
+    "350ml Rotwein",
+    "2 Knoblauchzehen",
+    "Zitronenzeste von 1 Zitrone",
+    "1 Loorberblatt",
+    "2 EL Tomatenmark",
+    "Salz, Pfeffer, Paprika, Majoran, Cayenpfeffer"
+    ],
+  "steps": 
+    [   
+    "Zwiebeln in Butter anschwitzen. Zwiebeln rausnehmen. Fleisch richtig scharf anbraten. Zwiebeln dazugeben. Tomatenmark kurz mit anrösten. Mit Wein ablöschen und auf 1/3 reduzieren. Rest dazugeben und 2-2,5h gut kochen lassen."
+    ],
+  "cooking_instructions": ""
+  }
+]

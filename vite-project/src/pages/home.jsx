@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import recipes from '../data/recipes.json';
+import recipes from '../data/recipes';
 
 export default function Home() {
   const [typeTagsSelected, setTypeTagsSelected] = useState([]);
