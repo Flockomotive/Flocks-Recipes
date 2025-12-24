@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import recipes from '../data/recipes';
-import './Home.css'; // 👈 IMPORTANT: make sure this path is correct
+import './home.css'; // 👈 IMPORTANT: make sure this path is correct
 
 export default function Home() {
   const [typeTagsSelected, setTypeTagsSelected] = useState([]);
