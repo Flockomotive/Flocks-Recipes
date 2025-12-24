@@ -1,13 +1,14 @@
 {
-  "id": "unique name",
-  "name": "friendly name",
-  "tags-type": ["chocolate", "cake", "baking"],
-  "tags-style": ["chocolate", "cake", "baking"],
-  "tags-geo": ["chocolate", "cake", "baking"],
-  "category": "Hauptspeiße",
+  "id": "unique name -> should be filename",
+  "title": "friendly name",
+  "tags-type": ["Pasta","Kalt","Vegetarisch","Beilagen"],
+  "tags-occasion": ["Schnelle Rezepte","Sommer","Party"],
+  "tags-geo": [],
+  "category": "Hauptgericht","Hauptgericht","Vorspeise","Appetizer"  -> use only 1
   "prepTime": "1 Stunde",
   "cookTime": "3 Stunden",
   "image": "/images/Gulasch.jpeg",
+  "servings":"10 Stück",
   "ingredients": 
     [
     "200g flour",

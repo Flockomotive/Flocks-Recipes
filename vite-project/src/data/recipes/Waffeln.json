@@ -1,29 +1,27 @@
-[  
-    {
-    "id": "Waffeln",
-    "title": "klassische Waffeln",
-    "tags-type": ["Vegetarisch","Backen"],
-    "tags-style": ["Frühstück"],
-    "tags-geo": ["Klassisch Deutsch"],
-    "category": "Dessert",
-    "prepTime": "0,5 Stunde",
-    "cookTime": "0,5 Stunden",
-    "image": "",
-    "ingredients": 
-        [
-        "100g Butter",
-        "75g Zucker",
-        "2 Eier",
-        "125g Mehl",
-        "150 Milch",
-        "1TL Backpulver",
-        "1 TL Zimt",
-        "1 TL Vanillezucker",
-        "3 Äpfel"
-        ],
-    "steps": 
-        [   
-        ],
-    "cooking_instructions": ""
-    }
-]
+{
+"id": "Waffeln",
+"title": "klassische Waffeln",
+"tags-type": ["Vegetarisch","Backen"],
+"tags-occasion": ["Frühstück"],
+"tags-geo": ["Klassisch Deutsch"],
+"category": "Dessert",
+"prepTime": "0,5 Stunde",
+"cookTime": "0,5 Stunden",
+"image": "",
+"ingredients": 
+    [
+    "100g Butter",
+    "75g Zucker",
+    "2 Eier",
+    "125g Mehl",
+    "150 Milch",
+    "1TL Backpulver",
+    "1 TL Zimt",
+    "1 TL Vanillezucker",
+    "3 Äpfel"
+    ],
+"steps": 
+    [   
+    ],
+"cooking_instructions": ""
+}

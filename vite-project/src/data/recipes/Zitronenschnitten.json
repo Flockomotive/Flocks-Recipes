@@ -1,0 +1,39 @@
+{
+  "id": "Zitronenschnitten",
+  "title": "Zitronenschnitten",
+  "tags-type": ["Backen","Kalt"],
+  "tags-occasion": ["Schnelle Rezepte","Sommer","Party"],
+  "tags-geo": ["Klassisch Deutsch"],
+  "category": "Dessert",
+  "prepTime": "",
+  "cookTime": "",
+  "image": "/images/Zitronenschnitten.jpeg",
+  "servings":"10 Stück",
+  "ingredients": 
+    [
+        "<b>Für den Teig:<b/>",
+        "3 Eier",
+        "80g Zucker",
+        "1 Bio Zitrone",
+        "100g Weizenmehl",
+        "<b>Für die Füllung:<b/>",
+        "250ml Zitronensaft (3-4 Zitronen)",
+        "250ml Wasser",
+        "60 Speisestärke",
+        "1 Ei",
+        "25g Zucker",
+        "<b>Für die Garnitur:<b/>",
+        "100g Sahne",
+        "1 Zitrone",
+        "Blätter Zitronenmelisse"
+    ],
+  "steps": 
+    [   
+        "1. Den Backofen auf 200°C vorheizen.",
+        "2. Eigelbe, 50g Zucker und Zitronenschale dick-schaumig schlagen. Die Eiweiße in einer zweiten Schüssel mit dem restlichen Zucker zu steifem Schnee schlagen, auf die Schaummasse häufen und das Mehl darübersieben. Alles gründlich unterheben und auf ein mit Back-papier ausgelegtes Backblech streichen. Auf der mittleren Schiene in 8-10 Minuten goldgelb backen. Die Teigplatte auf ein mit Zucker bestreutes Kü-chentuch stürzen, das Papier anfeuchten und abzie-hen. Die Biskuitplatte abkühlen lassen.",
+        "3. Inzwischen Zitronensaft und Wasser vermi-schen, 5 Eßlöffel davon abnehmen und das Stärkemehl damit anrühren. Die restliche Flüssigkeit zum Kochen bringen und die angerührte Stärke unter standigem Rühren einlaufen lassen. Die Creme Jedes Rechteck mit Zitronen-creme bestreichen und dann jeweils aufeinandersetzen. einmal aufkochen lassen, von der Kochstelle nehmen und sofort das Eigelb unterrühren. Das Eiweiß steif schlagen und nach und nach den Zucker einrieseln lassen. So lange schlagen, bis der Eischnee schnittfest und glänzend ist. Unter die heiße Zitro-nencreme rühren.",
+        "4. Die Biskuitplatte der Länge nach in 4 gleich breite Teile schneiden. Die Rechtecke mit etwas Zi-tronencreme bestreichen und übereinander zusam-mensetzen. Den Kuchen rundherum mit der Creme bestreichen, dann einige Stunden kühlstellen.",
+        "5. Vor dem Servieren die Sahne steif schlagen, in einen Spritzbeutel füllen und den Kuchen mit 10 Tupfen garnieren. In jeden Tupfen ein Viertel einer Zitronen-scheibe stecken, links und rechts davon mit den Blättern der Zitronenmelisse garnieren und 10 Schnitten schneiden. Kuchen gut durchziehen lassen."
+    ],
+  "cooking_instructions": "200°C für 10 Minuten"
+}

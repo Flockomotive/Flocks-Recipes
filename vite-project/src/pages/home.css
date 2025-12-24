@@ -1,0 +1,46 @@
+/* Layout already exists */
+.layout {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Sidebar */
+.sidebar {
+  background: #fffeb7;
+  width: 250px;
+}
+
+/* Main content */
+.content {
+  flex: 1;
+}
+
+/* NEW: categories layout */
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+  .category {
+  background: #35af2e;
+  gap: 2rem,
+
+}
+
+
+/* Each category box */
+.categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem; /* spacing between items */
+}
+
+.category {
+  background: #fffeb7;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.sidebar label {
+  display: block;
+}
