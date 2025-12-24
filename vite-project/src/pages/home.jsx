@@ -5,12 +5,12 @@ import './Home.css'; // 👈 IMPORTANT: make sure this path is correct
 
 export default function Home() {
   const [typeTagsSelected, setTypeTagsSelected] = useState([]);
-  const [styleTagsSelected, setStyleTagsSelected] = useState([]);
+  const [occasionTagsSelected, setoccasionTagsSelected] = useState([]);
   const [geoTagsSelected, setGeoTagsSelected] = useState([]);
 
   // Available tags
   const typeTags = [...new Set(recipes.flatMap(r => r['tags-type'] || []))];
-  const styleTags = [...new Set(recipes.flatMap(r => r['tags-style'] || []))];
+  const occasionTags = [...new Set(recipes.flatMap(r => r['tags-occasion'] || []))];
   const geoTags = [...new Set(recipes.flatMap(r => r['tags-geo'] || []))];
 
   const toggle = (tag, selected, setSelected) => {
@@ -23,7 +23,7 @@ export default function Home() {
 
   const hasActiveFilters =
     typeTagsSelected.length > 0 ||
-    styleTagsSelected.length > 0 ||
+    occasionTagsSelected.length > 0 ||
     geoTagsSelected.length > 0;
 
   const matchesFilters = (recipe) => {
@@ -33,15 +33,15 @@ export default function Home() {
       typeTagsSelected.length === 0 ||
       recipe['tags-type']?.some(tag => typeTagsSelected.includes(tag));
 
-    const styleMatch =
-      styleTagsSelected.length === 0 ||
-      recipe['tags-style']?.some(tag => styleTagsSelected.includes(tag));
+    const occasionMatch =
+      occasionTagsSelected.length === 0 ||
+      recipe['tags-occasion']?.some(tag => occasionTagsSelected.includes(tag));
 
     const geoMatch =
       geoTagsSelected.length === 0 ||
       recipe['tags-geo']?.some(tag => geoTagsSelected.includes(tag));
 
-    return typeMatch && styleMatch && geoMatch;
+    return typeMatch && occasionMatch && geoMatch;
   };
 
   return (
@@ -73,13 +73,13 @@ export default function Home() {
 
           <div>
             <strong>Anlass</strong>
-            {styleTags.map(tag => (
+            {occasionTags.map(tag => (
               <label key={tag}>
                 <input
                   type="checkbox"
-                  checked={styleTagsSelected.includes(tag)}
+                  checked={occasionTagsSelected.includes(tag)}
                   onChange={() =>
-                    toggle(tag, styleTagsSelected, setStyleTagsSelected)
+                    toggle(tag, occasionTagsSelected, setoccasionTagsSelected)
                   }
                 />{' '}
                 {tag}

@@ -21,12 +21,6 @@
   flex-wrap: wrap;
   gap: 2rem;
 }
-  .category {
-  background: #35af2e;
-  gap: 2rem,
-
-}
-
 
 /* Each category box */
 .categories {
