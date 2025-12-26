@@ -1,0 +1,30 @@
+{
+  "id": "Kaiserschmarrn",
+  "title": "Kaiserschmarrn",
+  "tags-type": ["Vegetarisch","Beilagen","Backen"],
+  "tags-occasion": ["Schnelle Rezepte","Frühstück"],
+  "tags-geo": ["Österreichisch"],
+  "category": "Dessert",
+  "prepTime": "",
+  "cookTime": "",
+  "image": "",
+  "servings":"2 Portionen",
+  "ingredients": 
+    [
+    "3 Eier",
+    "90g Mehl",
+    "40g Zucker",
+    "225ml Milch",
+    "1 Prise Salz",
+    "1 Päckchen Vanillezucker",
+    "50ml Sprudelwasser",
+    "30g Butter"
+    ],
+  "steps": 
+    [   
+    "1. 3 Eier trennen. Eiweiß steif schlagen. Butter erwärmen",
+    "2. restliche Zutaten vermengen. Eiweiß unterheben",
+    "3. In einem Topf in den Ofen geben, bis es gold gelb ist und dann zerzupfen"
+    ],
+  "cooking_instructions": "Bei 180°C, ca 10Minuten"
+}

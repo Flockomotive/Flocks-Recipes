@@ -1,8 +1,8 @@
 {
   "id": "unique name -> should be filename",
   "title": "friendly name",
-  "tags-type": ["Pasta","Kalt","Vegetarisch","Beilagen"],
-  "tags-occasion": ["Schnelle Rezepte","Sommer","Party"],
+  "tags-type": ["Pasta","Kalt","Vegetarisch","Beilagen","Backen"],
+  "tags-occasion": ["Schnelle Rezepte","Sommer","Party","Frühstück"],
   "tags-geo": [],
   "category": "Hauptgericht","Hauptgericht","Vorspeise","Appetizer"  -> use only 1
   "prepTime": "1 Stunde",
