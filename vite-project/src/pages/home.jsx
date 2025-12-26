@@ -53,57 +53,72 @@ export default function Home() {
       <div className="layout">
 
         {/* ✅ SIDEBAR */}
-        <aside className="sidebar">
-          <h3>Filter</h3>
+<aside className="sidebar">
+  <h3>Filter</h3>
 
-          <div>
-            <strong>Art</strong>
-            {typeTags.map(tag => (
-              <label key={tag}>
-                <input
-                  type="checkbox"
-                  checked={typeTagsSelected.includes(tag)}
-                  onChange={() =>
-                    toggle(tag, typeTagsSelected, setTypeTagsSelected)
-                  }
-                />{' '}
-                {tag}
-              </label>
-            ))}
-          </div>
+  <div>
+    <strong>Art</strong>
+    {typeTags.map(tag => {
+      const active = typeTagsSelected.includes(tag);
 
-          <div>
-            <strong>Anlass</strong>
-            {occasionTags.map(tag => (
-              <label key={tag}>
-                <input
-                  type="checkbox"
-                  checked={occasionTagsSelected.includes(tag)}
-                  onChange={() =>
-                    toggle(tag, occasionTagsSelected, setoccasionTagsSelected)
-                  }
-                />{' '}
-                {tag}
-              </label>
-            ))}
-          </div>
+      return (
+        <button
+          key={tag}
+          type="button"
+          className={`filter-btn ${active ? "active" : ""}`}
+          aria-pressed={active}
+          onClick={() =>
+            toggle(tag, typeTagsSelected, setTypeTagsSelected)
+          }
+        >
+          {tag}
+        </button>
+      );
+    })}
+  </div>
 
-          <div>
-            <strong>Küche</strong>
-            {geoTags.map(tag => (
-              <label key={tag}>
-                <input
-                  type="checkbox"
-                  checked={geoTagsSelected.includes(tag)}
-                  onChange={() =>
-                    toggle(tag, geoTagsSelected, setGeoTagsSelected)
-                  }
-                />{' '}
-                {tag}
-              </label>
-            ))}
-          </div>
-        </aside>
+  <div>
+    <strong>Anlass</strong>
+    {occasionTags.map(tag => {
+      const active = occasionTagsSelected.includes(tag);
+
+      return (
+        <button
+          key={tag}
+          type="button"
+          className={`filter-btn ${active ? "active" : ""}`}
+          aria-pressed={active}
+          onClick={() =>
+            toggle(tag, occasionTagsSelected, setoccasionTagsSelected)
+          }
+        >
+          {tag}
+        </button>
+      );
+    })}
+  </div>
+
+  <div>
+    <strong>Küche</strong>
+    {geoTags.map(tag => {
+      const active = geoTagsSelected.includes(tag);
+
+      return (
+        <button
+          key={tag}
+          type="button"
+          className={`filter-btn ${active ? "active" : ""}`}
+          aria-pressed={active}
+          onClick={() =>
+            toggle(tag, geoTagsSelected, setGeoTagsSelected)
+          }
+        >
+          {tag}
+        </button>
+      );
+    })}
+  </div>
+</aside>
 
         {/* ✅ MAIN CONTENT */}
         <div className="content">
