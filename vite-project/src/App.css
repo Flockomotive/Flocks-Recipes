@@ -53,6 +53,27 @@ button {
   transform: scaleX(1);
 }
 
+/* Side Bar */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 250px;
+  border: solid 2px black;
+}
+.sidebar > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar > div > div {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap; 
+}
+
 @media only screen and (max-width: 2020px) {
   #root {
     padding: 0 50px;
