@@ -56,29 +56,31 @@ export default function Home() {
 <aside className="sidebar">
   <h3>Filter</h3>
 
-  <div>
+  <div className="category__wrapper">
     <strong>Art</strong>
+    <div className="category__filters">
     {typeTags.map(tag => {
       const active = typeTagsSelected.includes(tag);
-
-      return (
-        <button
-          key={tag}
-          type="button"
-          className={`filter-btn ${active ? "active" : ""}`}
-          aria-pressed={active}
-          onClick={() =>
-            toggle(tag, typeTagsSelected, setTypeTagsSelected)
-          }
-        >
-          {tag}
-        </button>
-      );
-    })}
+        return (
+          <button
+            key={tag}
+            type="button"
+            className={`filter-btn ${active ? "active" : ""}`}
+            aria-pressed={active}
+            onClick={() =>
+              toggle(tag, typeTagsSelected, setTypeTagsSelected)
+            }
+          >
+            {tag}
+          </button>
+        );
+      })}
+      </div>
   </div>
 
-  <div>
+  <div className="category__wrapper">
     <strong>Anlass</strong>
+    <div className="category__filters">
     {occasionTags.map(tag => {
       const active = occasionTagsSelected.includes(tag);
 
@@ -96,10 +98,12 @@ export default function Home() {
         </button>
       );
     })}
+    </div>
   </div>
 
-  <div>
+  <div className="category__wrapper">
     <strong>Küche</strong>
+    <div className="category__filters">
     {geoTags.map(tag => {
       const active = geoTagsSelected.includes(tag);
 
@@ -117,6 +121,7 @@ export default function Home() {
         </button>
       );
     })}
+    </div>
   </div>
 </aside>
 
