@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import recipes from '../data/recipes';
-import './home.css';
 import '../App.css';
 
 export default function Home() {
@@ -47,16 +46,16 @@ export default function Home() {
 
   return (
     <main>
-      <h1>My Recipes</h1>
 
       {/* ✅ LAYOUT WRAPPER */}
       <div className="layout">
 
         {/* ✅ SIDEBAR */}
 <aside className="sidebar">
-  <h3>Filter</h3>
+
 
   <div className="category__wrapper">
+  <h3>Filter</h3>
     <strong>Art</strong>
     <div className="category__filters">
     {typeTags.map(tag => {

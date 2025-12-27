@@ -8,7 +8,7 @@
   },
   "category": "Dessert",
   "times": { "prepMin": null, "cookMin": 10 },
-  "image": "/images/Zitronenschnitten.jpeg",
+  "image": "/images/zitronenschnitten.jpeg",
   "yield": { "servings": 10, "unit": "Stück" },
 
   "ingredients": [
