@@ -1,0 +1,39 @@
+{
+  "id": "pilzrisotto",
+  "title": "Pilzrisotto",
+  "tags": {
+    "type": ["Vegetarisch", "Beilagen", "Reis"],
+    "occasion": ["Schnelle Rezepte", "Frühstück"],
+    "geo": ["Italienisch"]
+  },
+  "category": "Hauptgericht",
+  "times": { "prepMin": 40, "cookMin": 40, "fullMin":40 },
+  "image": "",
+  "yield": { "servings": 4, "unit": "Portionen" },
+
+  "ingredientGroups": [
+    {
+      "key": "ingredients",
+      "title": "Zutaten",
+      "ingredients": [
+        { "item": "Risottoreis", "amount": 250, "unit": "g" },
+        { "item": "kleine Zwiebel", "amount": 1, "unit": "" },
+        { "item": "Champignons oder andere Pilze", "amount": 1, "unit": "Pack" },
+        { "item": "Frühlingszwiebeln", "amount": 3, "unit": "Stück" },
+        { "item": "Weißwein", "amount": 500, "unit": "ml" },
+        { "item": "Gemüsebrühe", "amount": 500, "unit": "ml" },
+        { "item": "Wasser", "amount": 250, "unit": "ml" },
+        { "item": "Parmesan", "amount": 50, "unit": "g" },
+        { "item": "Butter", "amount": 50, "unit": "g" },
+        { "item": "Salz, Pfeffer, Muskat", "unit": ""}
+      ]
+    }
+  ],
+
+  "steps": [
+    "Zwiebeln und Butter anschwitzen. Reis kurz mit anbraten. Salz dazugeben",
+    "Nach und nach Wein, Brühe und Wasser dazugeben und köcheln lassen",
+    "Nach 20 Min Kochzeit Pilze dazugeben, Nach 25 Min Butter und Parmesan. Insgesamt 30 Min kochen bis gewünschte Konsistenz erreicht"
+  ],
+  "cookingInstructions": "Reis 30 Min kochen, nach 20min Pilze, nach 25min Butter und Parmesan"
+}
