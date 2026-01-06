@@ -9,9 +9,10 @@ export default function Home() {
   const [geoTagsSelected, setGeoTagsSelected] = useState([]);
 
   // Available tags
-  const typeTags = [...new Set(recipes.flatMap(r => r['tags-type'] || []))];
-  const occasionTags = [...new Set(recipes.flatMap(r => r['tags-occasion'] || []))];
-  const geoTags = [...new Set(recipes.flatMap(r => r['tags-geo'] || []))];
+  const typeTags = [...new Set(recipes.flatMap(r => r.tags?.type ?? []))];
+  const occasionTags = [...new Set(recipes.flatMap(r => r.tags?.occasion ?? []))];
+  const geoTags = [...new Set(recipes.flatMap(r => r.tags?.geo ?? []))];
+
 
   const toggle = (tag, selected, setSelected) => {
     setSelected(
@@ -58,6 +59,7 @@ export default function Home() {
   <h3>Filter</h3>
     <strong>Art</strong>
     <div className="category__filters">
+
     {typeTags.map(tag => {
       const active = typeTagsSelected.includes(tag);
         return (
