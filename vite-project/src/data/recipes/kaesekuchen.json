@@ -1,0 +1,49 @@
+{
+  "id": "kaesekuchen",
+  "title": "Bester Käsekuchen der Welt",
+  "tags": {
+    "type": ["Vegetarisch", "Backen"],
+    "occasion": ["Kaffee"],
+    "geo": ["klassisch Deutsch"]
+  },
+  "category": "Dessert",
+  "times": { "prepMin": 30, "cookMin": 60 },
+  "image": "",
+  "yield": { "servings": 1, "unit": "Kuchen" },
+
+  "ingredientGroups": [
+    {
+      "key": "teig",
+      "title": "Für den Knetteig",
+      "ingredients": [
+        { "item": "Ei", "amount": 1, "unit": "" },
+        { "item": "Mehl", "amount": 200, "unit": "g" },
+        { "item": "Butter", "amount": 75, "unit": "g" },
+        { "item": "Backpulver", "amount": 0.5, "unit": "Pack" }
+      ]
+    },
+    {
+      "key": "fuellung",
+      "title": "Für die Füllung",
+      "ingredients": [
+        { "item": "Ei", "amount": 3, "unit": "" },
+        { "item": "Zucker", "amount": 225, "unit": "g" },
+        { "item": "Butter", "amount": 125, "unit": "g" },
+        { "item": "Backpulver", "amount": 1, "unit": "Pack" },
+        { "item": "Vanillepuddingpulver", "amount": 1, "unit": "Pack" },
+        { "item": "Quark", "amount": 500, "unit": "g" },
+        { "item": "Saure Sahne", "amount": 200, "unit": "g" },
+        { "item": "Süße Sahne", "amount": 200, "unit": "g" }
+      ]
+    }
+  ],
+
+  "steps": [
+    "Die Zutaten für den Knetteig in eine Schüssel geben, rasch zusammenkneten und zur Seite stellen.",
+    "Für die Füllung Margarine, Zucker, Vanillezucker, Puddingpulver und Eier in einer Schüssel verrühren. Dann den Quark und die saure Sahne untermischen. Die süße Sahne steif schlagen und unterheben.",
+    "Den Backofen auf 180 °C Ober-/Unterhitze vorheizen. Eine Schüssel mit Wasser mit in den Ofen stellen.",
+    "Den Knetteig in einer gefetteten 26er Springform auslegen, etwa 2 - 3 cm am Rand hochziehen. Nun die Füllung in die Form geben, glatt streichen und im heißen Backofen auf der zweiten Schiene von unten 1 Stunde backen."
+  ],
+
+  "cookingInstructions": "180°C Ober-/Unterhitze 1h backen"
+}
