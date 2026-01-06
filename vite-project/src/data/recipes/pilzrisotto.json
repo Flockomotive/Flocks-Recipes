@@ -14,7 +14,7 @@
   "ingredientGroups": [
     {
       "key": "ingredients",
-      "title": "Zutaten",
+      "title": "",
       "ingredients": [
         { "item": "Risottoreis", "amount": 250, "unit": "g" },
         { "item": "kleine Zwiebel", "amount": 1, "unit": "" },

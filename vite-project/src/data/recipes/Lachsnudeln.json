@@ -1,27 +1,41 @@
 {
-"id": "Lachsnudeln",
+"id": "lachsnudeln",
 "title": "Lachsnudeln",
-"tags-type": ["Fisch","Pasta"],
-"tags-occasion": ["Schnelle Rezepte"],
-"tags-geo": ["Klassisch Deutsch","Italienisch"],
+
+  "tags": {
+    "type": ["Fisch","Pasta"],
+    "occasion": ["Schnelle Rezepte"],
+    "geo": ["Klassisch Deutsch","Italienisch"]
+    },
+
 "category": "Hauptgericht",
-"prepTime": "0,5 Stunde",
-"cookTime": "0,5 Stunden",
+
+"times": { "prepMin": 30, "cookMin": 30, "fullMin":30 },
+
 "image": "",
-"ingredients": 
-    [
-    "250g Lachs (tiefgefroren)",
-    "350g Tagliatelle",
-    "1/2 Becher Sahne",
-    "1TL Tomatenmark",
-    "1 EL Dill",
-    "1 Zwiebel",
-    "1 Knoblauchzehe",
-    "Zitrone"
-    ],
+
+  "yield": { "servings": 2, "unit": "Portionen" },
+  "ingredientGroups": [
+    {
+      "key": "ingredients",
+      "title": "Zutaten",
+      "ingredients": [
+        { "item": "Lachs (tiefgeforen)", "amount": 250, "unit": "g" },
+        { "item": "Nudeln (bevorzugt Tagliattele)", "amount": 300, "unit": "g" },
+        { "item": "Sahne", "amount": 200, "unit": "ml" },
+        { "item": "Tomatenmark", "amount": 1, "unit": "TL" },
+        { "item": "Knoblauchzehen", "amount": 2, "unit": "" },
+        { "item": "Zitrone", "amount": 1, "unit": "" },
+        { "item": "Tomatenmark", "amount": 3, "unit": "EL" },
+        { "item": "Salz, Pfeffer, Dill", "unit": ""}
+      ]
+    }
+  ],
+
 "steps": 
-    [   
-    "Zwiebeln in Butter anschwitzen. Zwiebeln rausnehmen. Fleisch richtig scharf anbraten. Zwiebeln dazugeben. Tomatenmark kurz mit anrösten. Mit Wein ablöschen und auf 1/3 reduzieren. Rest dazugeben und 2-2,5h gut kochen lassen."
-    ],
-"cooking_instructions": ""
+  [   
+    ""
+  ],
+
+  "cookingInstructions":  ""
 }

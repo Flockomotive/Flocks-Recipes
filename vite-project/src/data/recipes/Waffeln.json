@@ -1,27 +1,43 @@
 {
 "id": "Waffeln",
 "title": "klassische Waffeln",
-"tags-type": ["Vegetarisch","Backen"],
-"tags-occasion": ["Frühstück"],
-"tags-geo": ["Klassisch Deutsch"],
+
+"tags": {
+  "type": ["Vegetarisch","Backen"],
+  "occasion": ["Frühstück"],
+  "geo": ["Klassisch Deutsch"]
+},
+
 "category": "Dessert",
-"prepTime": "0,5 Stunde",
-"cookTime": "0,5 Stunden",
+
+"times": {},
+
 "image": "",
-"ingredients": 
-    [
-    "100g Butter",
-    "75g Zucker",
-    "2 Eier",
-    "125g Mehl",
-    "150 Milch",
-    "1TL Backpulver",
-    "1 TL Zimt",
-    "1 TL Vanillezucker",
-    "3 Äpfel"
-    ],
+
+"yield": { "servings": 2, "unit": "Portionen" },
+"ingredientGroups": [
+  {
+    "key": "ingredients",
+    "title": "",
+    "ingredients": [
+      { "item": "Butter", "amount": 100, "unit": "g" },
+      { "item": "Zucker", "amount": 75, "unit": "g" },
+      { "item": "Eier", "amount": 2, "unit": "" },
+      { "item": "Mehl", "amount": 125, "unit": "g" },
+      { "item": "Milch", "amount": 150, "unit": "ml"},
+      { "item": "Vanillezucker", "amount": 1, "unit": "TL" },
+      { "item": "Zimt", "amount": 1, "unit": "TL" },
+      { "item": "Äpfel", "amount": 3, "unit": "" }
+    ]
+  }
+],
+
 "steps": 
-    [   
-    ],
-"cooking_instructions": ""
+  [   
+    "Eier trennen. Eiweiß steif schlagen. Butter erwärmen.",
+    "Restliche Zutaten vermengen. Eiweiß unterheben.",
+    "In einer ofenfesten Pfanne backen, bis goldgelb, dann zerzupfen."
+  ],
+
+  "cookingInstructions":  ""
 }

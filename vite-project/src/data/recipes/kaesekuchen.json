@@ -1,14 +1,19 @@
 {
   "id": "kaesekuchen",
   "title": "Bester Käsekuchen der Welt",
+
   "tags": {
     "type": ["Vegetarisch", "Backen"],
     "occasion": ["Kaffee"],
     "geo": ["klassisch Deutsch"]
   },
+
   "category": "Dessert",
+
   "times": { "prepMin": 30, "cookMin": 60 },
+
   "image": "",
+  
   "yield": { "servings": 1, "unit": "Kuchen" },
 
   "ingredientGroups": [

@@ -1,31 +1,44 @@
+
 {
-  "id": "kaiserschmarrn",
-  "title": "Kaiserschmarrn",
-  "tags": {
-    "type": ["Vegetarisch", "Beilagen", "Backen"],
-    "occasion": ["Schnelle Rezepte", "Frühstück"],
-    "geo": ["Österreichisch"]
-  },
-  "category": "Dessert",
-  "times": { "prepMin": null, "cookMin": 10 },
-  "image": "",
-  "yield": { "servings": 2, "unit": "Portionen" },
+"id": "kaiserschmarrn",
+"title": "Kaiserschmarrn",
 
-  "ingredients": [
-    { "item": "Ei", "amount": 3, "unit": "Stück" },
-    { "item": "Mehl", "amount": 90, "unit": "g" },
-    { "item": "Zucker", "amount": 40, "unit": "g" },
-    { "item": "Milch", "amount": 225, "unit": "ml" },
-    { "item": "Salz", "amount": 1, "unit": "Prise", "scalable": false },
-    { "item": "Vanillezucker", "amount": 1, "unit": "packet" },
-    { "item": "Sprudelwasser", "amount": 50, "unit": "ml" },
-    { "item": "Butter", "amount": 30, "unit": "g" }
-  ],
+"tags": {
+  "type": ["Vegetarisch","Backen"],
+  "occasion": ["Frühstück"],
+  "geo": ["Österreichisch"]
+},
 
-  "steps": [
+"category": "Dessert",
+
+"times": { "prepMin": 20, "cookMin": 10, "fullMin":30 },
+
+"image": "",
+
+"yield": { "servings": 2, "unit": "Portionen" },
+"ingredientGroups": [
+  {
+    "key": "ingredients",
+    "title": "",
+    "ingredients": [
+      { "item": "Ei", "amount": 3, "unit": "" },
+      { "item": "Mehl", "amount": 90, "unit": "g" },
+      { "item": "Zucker", "amount": 40, "unit": "g" },
+      { "item": "Milch", "amount": 225, "unit": "ml" },
+      { "item": "Salz", "amount": 1, "unit": "Prise"},
+      { "item": "Vanillezucker", "amount": 1, "unit": "Pack" },
+      { "item": "Sprudelwasser", "amount": 50, "unit": "ml" },
+      { "item": "Butter", "amount": 30, "unit": "g" }
+    ]
+  }
+],
+
+"steps": 
+  [   
     "Eier trennen. Eiweiß steif schlagen. Butter erwärmen.",
     "Restliche Zutaten vermengen. Eiweiß unterheben.",
     "In einer ofenfesten Pfanne backen, bis goldgelb, dann zerzupfen."
   ],
-  "cookingInstructions": "Bei 180°C ca. 10 Minuten"
+
+  "cookingInstructions":  ""
 }
