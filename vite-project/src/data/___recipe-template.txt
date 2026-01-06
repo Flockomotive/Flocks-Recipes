@@ -2,24 +2,38 @@
   "id": "kaiserschmarrn",
   "title": "Kaiserschmarrn",
   "tags": {
-    "type": ["Vegetarisch", "Beilagen", "Backen"],
+    "type": ["Vegetarisch", "Beilagen", "Backen","Reis"],
     "occasion": ["Schnelle Rezepte", "Frühstück"],
-    "geo": ["Österreichisch"]
+    "geo": ["Österreichisch","Italienisch"]
   },
   "category": "Dessert",
   "times": { "prepMin": null, "cookMin": 10 },
   "image": "",
   "yield": { "servings": 2, "unit": "Portionen" },
 
-  "ingredients": [
-    { "item": "Ei", "amount": 3, "unit": "Stück" },
-    { "item": "Mehl", "amount": 90, "unit": "g" },
-    { "item": "Zucker", "amount": 40, "unit": "g" },
-    { "item": "Milch", "amount": 225, "unit": "ml" },
-    { "item": "Salz", "amount": 1, "unit": "Prise", "scalable": false },
-    { "item": "Vanillezucker", "amount": 1, "unit": "packet" },
-    { "item": "Sprudelwasser", "amount": 50, "unit": "ml" },
-    { "item": "Butter", "amount": 30, "unit": "g" }
+  "ingredientGroups": [
+    {
+      "key": "ingredients",
+      "title": "Zutaten",
+      "ingredients": [
+        { "item": "Risottoreis", "amount": 250, "unit": "g" },
+        { "item": "kleine Zwiebel", "amount": 1, "unit": "" },
+        { "item": "Weißwein", "amount": 500, "unit": "ml" },
+        { "item": "Gemüsebrühe", "amount": 500, "unit": "ml" },
+        { "item": "Wasser", "amount": 250, "unit": "ml" },
+        { "item": "Parmesan", "amount": 50, "unit": "g" },
+        { "item": "Butter", "amount": 50, "unit": "g" },
+        { "item": "Salz, Pfeffer, Muskat", "unit": ""}
+      ]
+    }
+    delete second ingredient group if not needed or add more.
+    {
+      "key": "frying",
+      "title": "Zum Backen / Finish",
+      "ingredients": [
+        { "item": "Butter", "amount": 30, "unit": "g" }
+      ]
+    }
   ],
 
   "steps": [
