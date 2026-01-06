@@ -32,15 +32,15 @@ export default function Home() {
 
     const typeMatch =
       typeTagsSelected.length === 0 ||
-      recipe['tags-type']?.some(tag => typeTagsSelected.includes(tag));
+      (recipe.tags?.type ?? []).some(tag => typeTagsSelected.includes(tag));
 
     const occasionMatch =
       occasionTagsSelected.length === 0 ||
-      recipe['tags-occasion']?.some(tag => occasionTagsSelected.includes(tag));
+      (recipe.tags?.occasion ?? []).some(tag => occasionTagsSelected.includes(tag));
 
     const geoMatch =
       geoTagsSelected.length === 0 ||
-      recipe['tags-geo']?.some(tag => geoTagsSelected.includes(tag));
+      (recipe.tags?.geo ?? []).some(tag => geoTagsSelected.includes(tag));
 
     return typeMatch && occasionMatch && geoMatch;
   };
