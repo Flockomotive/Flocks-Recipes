@@ -1,0 +1,44 @@
+{
+  "id": "gemüselasagne",
+  "title": "Gemüselasagne",
+  "tags": {
+    "type": ["Vegetarisch", "Aufläufe", "Pasta"],
+    "occasion": [],
+    "geo": ["Italienisch"]
+  },
+  "category": "Hauptgericht",
+  "times": { "prepMin": 45, "cookMin": 45 },
+  "image": "",
+  "yield": { "servings": 6, "unit": "Portionen" },
+
+  "ingredientGroups": [
+    {
+      "key": "ingredients",
+      "title": "Zutaten",
+      "ingredients": [
+        { "item": "Nudelplatten" },
+        { "item": "Lauch", "amount": 1},
+        { "item": "Kolrabi", "amount": 1},
+        { "item": "Brokkoli", "amount": 1},
+        { "item": "Karotten", "amount": 2},
+        { "item": "Champignons", "amount": 1, "unit": "Packung"},
+        { "item": "Zwiebeln", "amount": 1},
+        { "item": "Knoblauch", "amount": 5, "unit": "Zehen"},
+        { "item": "Parmesan", "amount": 100, "unit": "g" },
+        { "item": "geriebener Gouda", "amount": 250 , "unit": "g" },
+        { "item": "Ricotta", "amount": 200, "unit": "g" },
+        { "item": "gehackte Tomaten", "amount": 1, "unit": "Dose" },
+        { "item": "Senf", "amount": 1, "unit": "TL"},
+        { "item": "Salz, Pfeffer, Zucker, Majoran, Basilikum, (oder ital. Kraäuter)"}
+      ]
+    }
+  ],
+
+  "steps": [
+    "Karotten und Korlabi hobeln, Rest schneiden, Brokkoli in sehr kleine Rösschen",
+    "Gemüse in einer Pfanne glassig anbraten",
+    "Tomaten, Senf und Gewürze dazugeben und etwas einkochen lassen",
+    "Lasagen bauen. von unten nach oben: Gemüse, Nudeln, Ricotta+Gouda"
+  ],
+  "cookingInstructions": "Bei 200C ca. 40 Minuten"
+}
