@@ -2,6 +2,7 @@
   "id": "gemüselasagne",
   "title": "Gemüselasagne",
   "description": "Eine köstliche und gesunde Lasagne mit frischem Gemüse und Käse.",
+  "createdAt": "2025-01-01",
   "tags": {
     "type": ["Vegetarisch", "Aufläufe", "Pasta"],
     "occasion": [],

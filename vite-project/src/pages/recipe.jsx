@@ -1,165 +1,147 @@
-import { useMemo, useState } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, useParams } from "react-router-dom";
 import recipes from "../data/recipes";
+import "../App.css";
+import SiteHeader from "../components/SiteHeader";
+
+const fmt = (n) => (Math.round(n * 100) / 100).toString().replace(".", ",");
 
 export default function Recipe() {
   const { id } = useParams();
   const recipe = recipes.find((r) => r.id === id) ?? null;
 
-  if (!recipe) return <p>Recipe not found</p>;
+  const baseServings = recipe?.yield?.servings ?? 1;
 
-  const related = useMemo(() => {
-    const t = recipe?.tags ?? {};
-    return {
-      type: (t.type ?? []).filter(Boolean),
-      occasion: (t.occasion ?? []).filter(Boolean),
-      geo: (t.geo ?? []).filter(Boolean),
-    };
-  }, [recipe]);
-
-  const baseServings = recipe.yield?.servings ?? 1;
   const [servings, setServings] = useState(baseServings);
+  const [checked, setChecked] = useState({});
+  const [imageOpen, setImageOpen] = useState(false);
 
-  function roundSmart(n) {
-    const rounded = Math.round(n * 100) / 100;
-    return Number.isInteger(rounded) ? rounded : rounded;
+  useEffect(() => {
+    setServings(baseServings);
+    setChecked({});
+    setImageOpen(false);
+  }, [id, baseServings]);
+
+  if (!recipe) {
+    return (
+      <main className="recipe">
+        <p>Rezept nicht gefunden.</p>
+        <Link to="/">Zurück</Link>
+      </main>
+    );
   }
 
-  // ✅ Scale grouped ingredients ONLY
-  const scaledIngredientGroups = useMemo(() => {
-    const factor = (servings || 1) / (baseServings || 1);
-
-    return recipe.ingredientGroups.map((group) => ({
-      ...group,
-      ingredients: group.ingredients.map((ing) => {
-        const scalable = ing.scalable !== false;
-        const canScale =
-          typeof ing.amount === "number" && Number.isFinite(ing.amount);
-
-        if (!scalable || !canScale) return ing;
-
-        return {
-          ...ing,
-          amount: roundSmart(ing.amount * factor),
-        };
-      }),
-    }));
-  }, [recipe, servings, baseServings]);
+  const factor = servings / baseServings;
+  const total = (recipe.times?.prepMin ?? 0) + (recipe.times?.cookMin ?? 0);
 
   return (
-    <main>
-      <div className="layout">
-        {/* SIDEBAR */}
-        <aside className="sidebar">
-          {recipe.image && <img src={recipe.image} alt={recipe.title} />}
+    <main className="page recipe">
+      <SiteHeader />
+      <article className="recipe__body">
+        {/* Link "Alle Rezepte" entfernt */}
 
-          <div className="category__wrapper">
-            <h2>{recipe.title}</h2>
-            <strong>Art</strong>
-            <div className="category__filters">
-              {related.type.map((tag) => (
-                <span key={tag} className="filter-btn tag-pill">
-                  {tag}
-                </span>
-              ))}
-            </div>
-          </div>
-
-          <div className="category__wrapper">
-            <strong>Anlass</strong>
-            <div className="category__filters">
-              {related.occasion.map((tag) => (
-                <span key={tag} className="filter-btn tag-pill">
-                  {tag}
-                </span>
-              ))}
-            </div>
-          </div>
-
-          <div className="category__wrapper">
-            <strong>Küche</strong>
-            <div className="category__filters">
-              {related.geo.map((tag) => (
-                <span key={tag} className="filter-btn tag-pill">
-                  {tag}
-                </span>
-              ))}
-            </div>
-          </div>
-
-          <p style={{ marginTop: 12 }}>
-            <Link to="/">← Back</Link>
-          </p>
-        </aside>
-
-        {/* MAIN CONTENT */}
-        <section className="recipe-content">
-          {(recipe.times?.prepMin != null || recipe.times?.cookMin != null || recipe.times?.fullMin != null) && (
-            <p>
-              <strong>Zeit:</strong>{" "}
-              {recipe.times?.prepMin != null && `Vorbereitungszeit: ${recipe.times.prepMin} min  ·  Koch-/Backzeit: ${recipe.times.cookMin} min  ·  Gesamtzeit: ${recipe.times.fullMin} min`}
-            </p>
+        <div className={`hero ${imageOpen ? "hero--open" : ""}`}>
+          {recipe.image ? (
+            <img src={recipe.image} alt={recipe.title} loading="lazy" />
+          ) : (
+            <div className="hero__placeholder">🍲</div>
           )}
+          <h1 className="hero__title">{recipe.title}</h1>
+          {recipe.image && (
+            <button
+              type="button"
+              className="img-toggle img-toggle--overlay"
+              aria-expanded={imageOpen}
+              onClick={() => setImageOpen((o) => !o)}
+            >
+              {imageOpen ? "Verkleinern ▲" : "Vergrößern ▼"}
+            </button>
+          )}
+        </div>
 
-          {/* INGREDIENTS */}
-          <div>
-            <h2>
-              Zutaten{" "}
-              <span className="small">
-                (für {baseServings} {recipe.yield?.unit ?? ""})
-              </span>
-            </h2>
+        {recipe.description && <p className="lead">{recipe.description}</p>}
 
-            {/* Portion calculator */}
-            <div style={{ margin: "12px 0 18px" }}>
-              <label style={{ display: "inline-flex", gap: 10 }}>
-                <strong>Portionen:</strong>
-                <input
-                  type="number"
-                  min={1}
-                  step={1}
-                  value={servings}
-                  onChange={(e) => setServings(Number(e.target.value))}
-                  style={{ width: 90, padding: 6 }}
-                />
-                <span>{recipe.yield?.unit ?? ""}</span>
-              </label>
+        <div className="meta">
+          <span>⏱ Vorbereitung {recipe.times?.prepMin ?? 0} Min</span>
+          <span>🔥 Garzeit {recipe.times?.cookMin ?? 0} Min</span>
+          <span>Σ {total} Min</span>
+        </div>
+
+        <div className="recipe__grid">
+          <section className="panel">
+            <div className="servings">
+              <h2>Zutaten</h2>
+              <div
+                className="servings__ctrl"
+                role="group"
+                aria-label="Portionen"
+              >
+                <button
+                  type="button"
+                  onClick={() => setServings((s) => Math.max(1, s - 1))}
+                  aria-label="Weniger"
+                >
+                  −
+                </button>
+                <span className="servings__value">
+                  {servings} {recipe.yield?.unit ?? "Portionen"}
+                </span>
+                <button
+                  type="button"
+                  onClick={() => setServings((s) => s + 1)}
+                  aria-label="Mehr"
+                >
+                  +
+                </button>
+              </div>
             </div>
 
-            {/* Grouped list */}
-            {scaledIngredientGroups.map((group) => (
-              <div key={group.key} style={{ marginBottom: 16 }}>
-                <h4>{group.title}</h4>
-                <ul>
-                  {group.ingredients.map((ing, i) => (
-                    <li key={i}>
-                      {ing.amount != null ? ing.amount : ""}{" "}
-                      {ing.unit ?? ""} {ing.item}
-                    </li>
-                  ))}
+            {recipe.ingredientGroups.map((group) => (
+              <div key={group.key}>
+                {recipe.ingredientGroups.length > 1 && <h3>{group.title}</h3>}
+                <ul className="ingredients">
+                  {group.ingredients.map((ing, i) => {
+                    const k = `${group.key}-${i}`;
+                    return (
+                      <li key={k} className={checked[k] ? "done" : ""}>
+                        <label>
+                          <input
+                            type="checkbox"
+                            checked={!!checked[k]}
+                            onChange={() =>
+                              setChecked((c) => ({ ...c, [k]: !c[k] }))
+                            }
+                          />
+                          <span>
+                            {ing.amount != null && (
+                              <strong>
+                                {fmt(ing.amount * factor)} {ing.unit ?? ""}{" "}
+                              </strong>
+                            )}
+                            {ing.item}
+                          </span>
+                        </label>
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             ))}
-          </div>
+          </section>
 
-          {/* Steps */}
-          <div>
+          <section className="panel">
             <h2>Zubereitung</h2>
-            <ol>
-              {recipe.steps.map((step, i) => (
-                <li key={i}>{step}</li>
+            <ol className="steps">
+              {recipe.steps.map((s, i) => (
+                <li key={i}>{s}</li>
               ))}
             </ol>
-          </div>
-
-          {recipe.cookingInstructions && (
-            <div>
-              <h2>Backofen / Hinweise</h2>
-              <p>{recipe.cookingInstructions}</p>
-            </div>
-          )}
-        </section>
-      </div>
+            {recipe.cookingInstructions && (
+              <p className="note">🔥 {recipe.cookingInstructions}</p>
+            )}
+          </section>
+        </div>
+      </article>
     </main>
   );
 }

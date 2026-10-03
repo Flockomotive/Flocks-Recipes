@@ -1,0 +1,46 @@
+{
+  "id": "blumenkohlauflauf",
+  "title": "Blumenkohlauflauf mit Kartoffeln",
+  "description": "Vegetarischer Auflauf mit cremiger Soße und überbackener Käseschicht.",
+  "createdAt": "2025-01-02",
+  "tags": {
+    "type": ["Vegetarisch", "Aufläufe"],
+    "occasion": [],
+    "geo": ["Deutsch"]
+  },
+  "category": "Hauptgericht",
+  "times": { "prepMin": 25, "cookMin": 20 },
+  "image": "",
+  "yield": { "servings": 4, "unit": "Personen" },
+
+  "ingredientGroups": [
+    {
+      "key": "ingredients",
+      "title": "Zutaten",
+      "ingredients": [
+        { "item": "Blumenkohl (ungeputzt)", "amount": 1000, "unit": "g" },
+        { "item": "Kartoffeln, festkochend", "amount": 800, "unit": "g" },
+        { "item": "Sahne", "amount": 200, "unit": "g" },
+        { "item": "Gouda, jung", "amount": 150, "unit": "g" },
+        { "item": "Vollmilch", "amount": 100, "unit": "ml" },
+        { "item": "Parmesan", "amount": 50, "unit": "g" },
+        { "item": "Zwiebel", "amount": 1 },
+        { "item": "Knoblauch", "amount": 1, "unit": "Zehe" },
+        { "item": "Gemüsebrühe (Paste oder gekörnt)", "amount": 2, "unit": "TL" },
+        { "item": "Zitronensaft", "amount": 2, "unit": "Spritzer" },
+        { "item": "Senf", "amount": 1, "unit": "TL" },
+        { "item": "Currypulver", "amount": 1, "unit": "TL" },
+        { "item": "Pflanzenöl", "amount": 1, "unit": "EL" },
+        { "item": "Butter", "amount": 1, "unit": "EL" },
+        { "item": "Muskatnuss, Pfeffer, Salz" }
+      ]
+    }
+  ],
+
+  "steps": [
+    "Kartoffeln würfeln und 15 Min. in Salzwasser kochen, nach 5 Min. Blumenkohlröschen und Zitronensaft dazugeben",
+    "Zwiebel und Knoblauch in Butter und Öl andünsten, mit Sahne und Milch ablöschen und würzen",
+    "Gemüse abgießen, in die gefettete Form geben, Soße darübergießen, Käse darüberreiben"
+  ],
+  "cookingInstructions": "Bei 180 °C Umluft 20–25 Minuten goldbraun überbacken"
+}
